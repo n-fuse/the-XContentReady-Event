@@ -1,7 +1,7 @@
 The XContentReady Event
 =======================
 
-**`XContentReady`** is a custom DOM Event on HTML pages to notify server side renderers of SPAs that the HTML code contains the content completely. The server side reverse proxy listens for this event to know when to deliver the page to its client.
+**`XContentReady`** A custom DOM Event to notify server side renderers of SPAs that the content of a page is completely serialized in the HTML code. The server side renderer (reverse proxy) listens for this event to know when to deliver the page to its client.
 
 Why?
 ----
