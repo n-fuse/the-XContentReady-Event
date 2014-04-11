@@ -48,7 +48,8 @@ Contribute
 
 Emit and consume the event as you need and list yourself as adopter here:
 
-- www.invend.eu
+- [Invend](www.invend.eu)
+- [Ember Prerender](https://github.com/zipfworks/ember-prerender)
 
 License
 -------
