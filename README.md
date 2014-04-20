@@ -24,11 +24,20 @@ document.addEventListener('XContentReady', function() {
 
 ### Emit it
 
-Instantiate a custom event and emit it in the application like so,
+Instantiate a custom DOM event and emit it in the application like so,
 once the application knows that the corresponding state as described above is reached:
 
 ````
 var e = new CustomEvent('XContentReady');
+document.dispatchEvent(e);
+````
+
+Note on PhatomJS:
+As of version 1.9.7 the method above is not supported. Use the old way of creating a custom event as long as `CustomEvent()` is not supported:
+
+````
+var e = document.createEvent('Event');
+e.initEvent('XContentReady', true, false);
 document.dispatchEvent(e);
 ````
 
